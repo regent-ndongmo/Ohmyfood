@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'CursiveFont';
+    src: url('cursif/Cursif.ttf') format('ttf');
+}
+  
+@font-face {
+    font-family: 'ShrikhandFont';
+    src: url('shrikhand/Shrikhand-Regular.otf') format('otf');
+}
 @media screen and (min-width: 800px) {
     .container{
         display: none;
@@ -11,6 +20,7 @@
     .header{
         text-align: center;
         background-color: #F3F3F3;
+        
     }
     .logo{
         /* position: fixed; */
@@ -81,29 +91,47 @@
         display: flex;
         font-size: 2em;
     }
-    .fa-heart{
-        color: black;
+    .far,{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
     }
+    /* .fa-heart{
+        /* color: black; 
+        mix-blend-mode: lighten;
+    } */
     .fa-heart:hover{
+        cursor: pointer;
         color: #FF79DA;
     }
+    /* .badge {
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 0.5rem;
+        border-radius: 2px;
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+      } */
     .footer{
         flex: 1;
         background-color: rgb(65, 58, 58);
         color: #F0F0E9;
-        padding: 30px;
+        padding-left: 30px;
         
     }
     .footer-logo{
         color: #fff;
+        font-family: 'CursiveFont', cursive, 'ShrikhandFont', sans-serif ;
+        font-size: 2rem;
     }
     .img-footer{
         color: #F0F0E9;
-        background-size: cover;
-        color: red;
     }
     .footer-links{
-        margin: 10px 0 10px 0;
+        margin-bottom: 20px;
     }
     .footer-links:hover{
         text-decoration: underline;
