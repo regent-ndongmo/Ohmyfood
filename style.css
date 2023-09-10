@@ -1,0 +1,115 @@
+@media screen and (min-width: 800px) {
+    .container{
+        display: none;
+    }  
+}
+@media screen and (max-width: 800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        text-align: center;
+        background-color: #F3F3F3;
+    }
+    .logo{
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        padding: 1rem 0 1rem 0;
+        width: 100%;
+        background-color: #FFF;
+        /* z-index: 9999; */
+    }
+    .localisation{
+        /* margin-top: em; */
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        background-color: #F0F0E9;
+        border-top: 5px solid #F0F0E9
+    }
+    .explorer{
+        background-color: #FF79DA;
+        padding: 1rem 0 1rem 0;
+        margin: 0 5rem 0 5rem;
+        border-radius: 50px;
+    }
+    .fonctionnement-section{
+
+    }
+    .fonctionnement-option{
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #f2f2f2;
+        padding: 10px 2px 10px 2px;
+    }
+    fieldset legend{
+        margin: 0 10px;
+    }
+    .restaurant-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0 20px 0 20px;
+        background-color: #f2f2f2;
+    }
+    .figure{
+        height: 16rem;
+        background-color: #fff;
+        margin: 10px 0 50px 0;
+        border-radius: 20px;
+    }
+    .figure:hover{
+        transform: scale(1.02);
+        transition-duration: 1s;
+
+    }
+    .img-restau{
+        height: 10rem;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .figcaption{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+    }
+    .figcaption p{
+        display: flex;
+        font-size: 2em;
+    }
+    .fa-heart{
+        color: black;
+    }
+    .fa-heart:hover{
+        color: #FF79DA;
+    }
+    .footer{
+        flex: 1;
+        background-color: rgb(65, 58, 58);
+        color: #F0F0E9;
+        padding: 30px;
+        
+    }
+    .footer-logo{
+        color: #fff;
+    }
+    .img-footer{
+        color: #F0F0E9;
+        background-size: cover;
+        color: red;
+    }
+    .footer-links{
+        margin: 10px 0 10px 0;
+    }
+    .footer-links:hover{
+        text-decoration: underline;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
