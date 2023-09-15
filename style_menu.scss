@@ -8,7 +8,7 @@
         position: fixed;
         margin-top: 0.6rem;
         margin-left: 1rem;
-        z-index: 1;
+        z-index: 2;
     }
     .logo{
         position: fixed;
@@ -16,6 +16,7 @@
         left: 0;
         padding: 1rem 0 1rem 0;
         width: 100%;
+        z-index: 1;
     }
     .menu-container{
         width: 100%;
@@ -49,6 +50,7 @@
         border-bottom: 2px solid #99E2D0;
     }
     .element{
+        opacity: 0;
         margin-top: 1rem;
         margin-bottom: 1rem;
         background-color: #fff;
@@ -60,21 +62,25 @@
             justify-content: space-between;
         }
     }
-    .commander{
+    .animated{
+        animation: appear 2s ease forwards;
+    }
+    @keyframes appear{
+        0%{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100%{
+            transition-duration: 1s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .commander-link{
         background-color: #9356DC;
         text-align: center;
         padding: 1rem 0 1rem 0;
         margin: 2rem 6rem 4rem 6rem;
         border-radius: 50px;
     }
-    // .text-menu{
-    //     display: flex;
-    //     justify-content: space-between;
-    //     .fa-circle-check{
-    //         font-size: 2em;
-    //         background-color: #99E2D0;
-    //         color: #fff;
-    //         // position: absolute;
-    //     }
-    // }
 }
