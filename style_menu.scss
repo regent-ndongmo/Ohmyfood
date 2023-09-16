@@ -47,15 +47,51 @@
         font-size: 2em;
     }
     .head{
-        border-bottom: 2px solid #99E2D0;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            width: 50%;
+            height: 15%;
+            background-color: #99E2D0;
+        }
     }
     .element{
         opacity: 0;
+        overflow: hidden;
         margin-top: 1rem;
         margin-bottom: 1rem;
         background-color: #fff;
         border-radius: 20px;
         padding: 3% ;
+        .btn-check{
+            border: 0;
+            position: absolute;
+            top: 0px;
+            right: -100px;
+            background-color: #99E2D0;
+            height: 100%;
+            width: 65px;
+            border-radius: 0 20px 20px 0;
+            transition-duration: 0.55s;
+            .fa-circle-check{
+                color: #fff;
+                transform: rotate(220deg);
+                transition-duration: 0.8s;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            .btn-check{
+                right: 0;
+            }
+            .fa-circle-check{
+                transform: rotate(0deg);
+            }
+        }
+        
         .footer-menu{
             display: flex;
             flex-wrap: nowrap;
