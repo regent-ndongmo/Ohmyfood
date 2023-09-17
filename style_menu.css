@@ -102,7 +102,7 @@
       right: 0;
     }
     100% {
-      right: 17%;
+      right: 4rem;
     }
   }
   .element:hover .text-menu {
