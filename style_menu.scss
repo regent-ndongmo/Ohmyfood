@@ -61,6 +61,7 @@
     .element{
         opacity: 0;
         overflow: hidden;
+        position: relative;
         margin-top: 1rem;
         margin-bottom: 1rem;
         background-color: #fff;
@@ -90,8 +91,29 @@
             .fa-circle-check{
                 transform: rotate(0deg);
             }
+            .price{
+                position: relative;
+                // right: 17%;
+                top: 0;
+                right: 0;
+                animation: slide 0.4s linear forwards;
+            }
+            @keyframes slide {
+                0%{
+                    right: 0;
+                }
+                100%{
+                    right: 15%;
+                }
+            }
+            .text-menu{
+                position: relative;
+                max-width: 73%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
         }
-        
         .footer-menu{
             display: flex;
             flex-wrap: nowrap;
