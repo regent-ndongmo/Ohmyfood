@@ -19,19 +19,20 @@
         z-index: 1;
     }
     .img-menu{
-        width: 96.5%;
-        height: 300px;
-        position: absolute;
-        // height: 15rem;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
         margin-top: 4rem;
+        margin-right: 5rem;
     }
     .menu-container{
         width: 100%;
         height: auto;
         background-color: #f2f2f2;
-        margin-top: 300px;
+        margin-top: -50px;
         border-radius: 50px 50px 0 0;
         position: relative;
+        z-index: 0.8;
 
     }
     .main-menu{
@@ -142,7 +143,7 @@
         background-color: #9356DC;
         text-align: center;
         padding: 1rem 0 1rem 0;
-        margin: 2rem 7rem 4rem 7rem;
+        margin: 2rem 5rem 4rem 5rem;
         font-size: 1.3em;
         border-radius: 50px;
     }
