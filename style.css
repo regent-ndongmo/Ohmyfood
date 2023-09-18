@@ -13,6 +13,55 @@
     }  
 }
 @media screen and (max-width: 800px) {
+    /* ANIMATION LOADING-SPINNER*/
+    .loader-position {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        animation: loader-background 0.01s;
+        animation-fill-mode: forwards;
+        z-index: 10000;
+        animation-delay: 1.75s;
+    }
+    
+    .loader-spinner-logo {
+        border: 10px #9356DC solid;
+        border-top: 10px solid #FF79DA;
+        border-bottom: 10px solid #99E2D0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        animation: loader 1200ms linear;
+    }
+    
+    @keyframes loader-background {
+        0% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        z-index: -9999;
+        }
+    }
+    @keyframes loader {
+        0% {
+        transform: rotate(0deg);
+        opacity: 1;
+        }
+        100% {
+        transform: rotate(360deg);
+        opacity: 1;
+        }
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -38,11 +87,18 @@
         background-color: #F0F0E9;
         border-top: 5px solid #F0F0E9
     }
-    .explorer{
+    .btn-explorer{
         background-color: #FF79DA;
-        padding: 1rem 0 1rem 0;
-        margin: 0 5rem 0 5rem;
+        padding: 1rem 1rem 1rem 01rem;
+        cursor: pointer;
         border-radius: 50px;
+    }
+    .btn{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    .btn:hover{
+        background-color: #c25ba5;
     }
     .fonctionnement-section h2{
         margin-left: 03%;
@@ -140,6 +196,21 @@
         display: flex;
         justify-content: space-between;
         padding: 0 20px 0 20px;
+    }
+    .superposition{
+        position: relative;
+
+    }
+    .heart-solid{
+        opacity: 0;
+    }
+    .heart-solid:hover{
+        opacity: 1;
+        color: #FF79DA;
+    }
+    .superposition p{
+        position: absolute;
+        right: 20%;
     }
     .figcaption p{
         display: flex;
