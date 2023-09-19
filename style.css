@@ -1,11 +1,15 @@
 @font-face {
-    font-family: 'CursiveFont';
-    src: url('cursif/Cursif.ttf') format('ttf');
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
   
 @font-face {
     font-family: 'ShrikhandFont';
-    src: url('shrikhand/Shrikhand-Regular.otf') format('otf');
+    src: url('Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @media screen and (min-width: 800px) {
     .container{
@@ -13,7 +17,6 @@
     }  
 }
 @media screen and (max-width: 800px) {
-    /* ANIMATION LOADING-SPINNER*/
     .loader-position {
         position: fixed;
         height: 100%;
@@ -62,6 +65,12 @@
         opacity: 1;
         }
     }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    h1{
+        font-family: "Shrikhand", cursive;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -72,16 +81,13 @@
         
     }
     .logo{
-        /* position: fixed; */
         top: 0;
         left: 0;
         padding: 1rem 0 1rem 0;
         width: 100%;
         background-color: #FFF;
-        /* z-index: 9999; */
     }
     .localisation{
-        /* margin-top: em; */
         width: 100%;
         padding: 1rem 0 1rem 0;
         background-color: #F0F0E9;
@@ -96,6 +102,7 @@
     .btn{
         font-size: 1.3rem;
         margin-bottom: 2rem;
+        border: none;
     }
     .btn:hover{
         background-color: #c25ba5;
@@ -236,7 +243,6 @@
     }
     .footer-logo{
         color: #fff;
-        font-family: 'CursiveFont', cursive, 'ShrikhandFont', sans-serif ;
         font-size: 2rem;
     }
     .img-footer{
