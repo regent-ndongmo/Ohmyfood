@@ -1,3 +1,158 @@
+@media screen and (min-width: 800px) {
+  .header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+  }
+  .fa-arrow-left {
+    position: fixed;
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+    z-index: 2;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .img-menu {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 4rem;
+    margin-right: 5rem;
+  }
+  .menu-container {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: -50px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    z-index: 0.8;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu .fa-heart {
+    margin-top: 2rem;
+  }
+  .header-logo {
+    font-size: 2em;
+  }
+  .head {
+    position: relative;
+  }
+  .head::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    width: 50%;
+    height: 15%;
+    background-color: #99E2D0;
+  }
+  .element {
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3%;
+  }
+  .element .btn-check {
+    border: 0;
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    background-color: #99E2D0;
+    height: 100%;
+    width: 65px;
+    border-radius: 0 20px 20px 0;
+    transition-duration: 0.55s;
+  }
+  .element .btn-check .fa-circle-check {
+    color: #fff;
+    transform: rotate(220deg);
+    transition-duration: 0.8s;
+  }
+  .element .text-menu {
+    position: relative;
+    max-width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .element:hover {
+    cursor: pointer;
+  }
+  .element:hover .btn-check {
+    right: 0;
+  }
+  .element:hover .fa-circle-check {
+    transform: rotate(0deg);
+  }
+  .element:hover .price {
+    position: relative;
+    top: 0;
+    right: 0;
+    animation: slide 0.4s linear forwards;
+  }
+  @keyframes slide {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: 4rem;
+    }
+  }
+  .element:hover .text-menu {
+    position: relative;
+    max-width: 73%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .element .footer-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .animated {
+    animation: appear 2s ease forwards;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      transition-duration: 1s;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .btn-commander {
+    background-color: #FF79DA;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin: 2rem 5rem 4rem 5rem;
+    font-size: 1.3em;
+    border-radius: 50px;
+  }
+}
 @media screen and (max-width: 800px) {
   .header {
     background-color: #fff;
@@ -56,7 +211,7 @@
   .head::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 50%;
     width: 50%;
     height: 15%;
@@ -87,6 +242,13 @@
     color: #fff;
     transform: rotate(220deg);
     transition-duration: 0.8s;
+  }
+  .element .text-menu {
+    position: relative;
+    max-width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .element:hover {
     cursor: pointer;
@@ -138,18 +300,11 @@
     }
   }
   .btn-commander {
-    background-color: #9356DC;
+    background-color: #FF79DA;
     text-align: center;
     padding: 1rem 0 1rem 0;
     margin: 2rem 5rem 4rem 5rem;
     font-size: 1.3em;
     border-radius: 50px;
-  }
-  .btn {
-    font-size: 1.3em;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background-color: #6a39a7;
   }
 }/*# sourceMappingURL=style_menu.css.map */
