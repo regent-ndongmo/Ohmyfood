@@ -91,7 +91,6 @@ h1{
     box-shadow: 0.25rem 0.25rem 10px $ombre-btn;
     background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
     color: white;
-//   padding: 17px 43px;
     border-radius: 60px;
     cursor: pointer;
 }
@@ -125,23 +124,6 @@ h1{
         padding: 1rem 0 1rem 0;
         background-color: #F0F0E9;
         border-top: 5px solid #F0F0E9
-    }
-    .btn-explorer{
-        background-color: $couleur-secondaire;
-        padding: 1rem 1rem 1rem 01rem;
-        cursor: pointer;
-        border-radius: 50px;
-    }
-    .btn{
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-        border: none;
-        box-shadow: 0 2px 2px $ombre-btn;
-    }
-    .btn:hover{
-        background-color: #da65b8;
-        transition-duration: 1s;
-        box-shadow: 0 8px 10px $ombre-btn;
     }
     .fonctionnement-section h2{
         margin-left: 03%;
