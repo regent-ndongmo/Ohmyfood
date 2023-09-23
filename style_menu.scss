@@ -152,17 +152,14 @@ $white-color: #fff;
         }
     }
     .btn-commander{
-        background-color: $couleur-secondaire;
         text-align: center;
         padding: 1rem 0 1rem 0;
         margin: 2rem 5rem 4rem 5rem;
-        font-size: 1.3em;
-        border-radius: 50px;
     }
 }
 @media screen and (max-width: 800px){
     .header{
-        background-color: #fff;
+        background-color: $white-color;
         display: flex;
         flex-direction: row;
     }
